@@ -1,0 +1,58 @@
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.appAside {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0b1a3a;
+}
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.appMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background: #fff;
+  justify-content: space-between; /* empurra o rodapé para o fim */
+}
+
+        footer {
+          text-align: center;
+          font-size: 0.9rem;
+          opacity: 0.7;
+        }
+
+.btn {
+  margin-top: 1.5rem;
+  padding: .8rem 1.2rem;
+  border: 0;
+  border-radius: .6rem;
+  background: #0b1a3a;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+    grid-template-rows: 45vh 1fr;
+  }
+
+  .contentPane {
+    align-items: center;
+    text-align: center;
+  }
+}
