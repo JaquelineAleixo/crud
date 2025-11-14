@@ -1,38 +1,25 @@
 import './App.css';
 import Banner from './componentes/Banner/Banner';
+import Login from './componentes/Login';
+import { IoEarthOutline } from "react-icons/io5";
+import { GrClose } from "react-icons/gr";
 
 function App() {
   return (
     <div className="app">  
       <aside className="appAside">
-        <img className="banner" src="/imagens/banner.png" alt="Banner principal da página"/>
+        <Banner />  
       </aside>
 
       {/* Lado direito com o conteúdo */}
       <main className="appMain">
         <header>
-          BR Close
+          <div className='iconText'> <IoEarthOutline />BR </div>
+          <div className='iconText'><GrClose /> Close </div>
         </header>
-        <div>
-        <h1>Faça seu login</h1>
-        <form>
-          <label>Selecione sua agência:
-          <select>
-            <option>São Paulo</option>
-            <option>Rio de Janeiro</option>
-            <option>Minas Gerais</option>
-            <option>Bahia</option>
-          </select></label>
-          <input type="text" placeholder="Usuário" /><br/>
-          <input type="password" placeholder="Senha" /><br/>
-          <a href="/">Esqueci minha senha</a><br/>
-          <button className="btn">Entrar</button>
-
-          
-        </form>
-
-       
-</div>
+        <div className="appContent">
+        <Login />
+        </div>
       <footer>
         <p>2023 - Itaú Private Bank. All rights reserved.&nbsp;&nbsp;&nbsp; Privacy Policy</p>
       </footer>
