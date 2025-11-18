@@ -1,0 +1,27 @@
+.select-display {
+  position: relative;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.select-display select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 4px 18px 6px 0;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+}
+
+.icon-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #f26a21;
+  pointer-events: none;
+}

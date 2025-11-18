@@ -1,0 +1,182 @@
+h1 {
+  margin-bottom: 100px;
+  color: #333;
+  font-weight: 500;
+}
+
+.field {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.field input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 4px 0 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.field input::placeholder,
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.field input:focus {
+  border-bottom-color: #f26a21;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.links a {
+  font-size: 12px;
+  color: #f26a21;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  background-color: #f26a21;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.btn-login:hover {
+  background-color: #d3d3d3;
+  color: #8a8a8a;
+}
+
+.input-password {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.input-password input {
+  border: none;
+  flex: 1;
+  padding: 4px 0 6px;
+}
+
+.input-password:focus-within {
+  border-bottom: 1px solid #f26a21;
+}
+
+.icon-eye {
+  border: none;
+  background: none;
+  padding: 0 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+.error-message {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #e53935;
+  text-align: center;
+}
+
+.info-message {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #00995d;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-bottom: 80px;
+    font-size: 1.5rem;
+  }
+
+  .field {
+    margin-bottom: 35px;
+  }
+
+  .field input {
+    font-size: 16px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  .links a {
+    font-size: 11px;
+  }
+
+  .btn-login {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    margin-bottom: 60px;
+    font-size: 1.25rem;
+  }
+
+  .field {
+    margin-bottom: 25px;
+  }
+
+  .field input {
+    padding: 3px 0 5px;
+    font-size: 14px;
+  }
+
+  .field label {
+    font-size: 11px;
+  }
+
+  .select-display select {
+    font-size: 14px;
+    padding: 3px 15px 5px 0;
+  }
+
+  .links {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .links a {
+    font-size: 10px;
+  }
+
+  .btn-login {
+    padding: 10px 16px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  .icon-seta {
+    font-size: 12px;
+  }
+}

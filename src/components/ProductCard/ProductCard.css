@@ -1,0 +1,31 @@
+.product-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+/* IMAGEM ocupa o máximo, sempre visível */
+.product-card-icon {
+  position: absolute;
+  width: 65%;
+  object-fit: contain;
+  object-position: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* TEXTO CENTRALIZADO sobre a imagem */
+.product-card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  z-index: 2;
+}
