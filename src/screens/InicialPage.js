@@ -55,7 +55,6 @@ export default function InicialPage() {
 
   return (
     <div className="layout">
-      {/* SIDEBAR */}
       <aside className="sidebar">
 
         <div className="sidebar-logo">
@@ -80,18 +79,16 @@ export default function InicialPage() {
         </div>
       </aside>
 
-      {/* CONTEÚDO PRINCIPAL */}
       <main className="content">
         <header className="content-header">
           <h2>{products.length} produtos criados</h2>
 
           <button className="btn-create" onClick={handleOpenModal}>
             <div className="btn-create-circle"><FiPlus size={20} /></div>
-            <div style={{ color: "#ffffff" }}>Criar</div>
+            <div style={{ color: "var(--color-white)" }}>Criar</div>
           </button>
         </header>
 
-        {/* GRID DE PRODUTOS */}
         <section className="products-grid">
           {products.map((p) => (
             <div key={p.id} className="product-wrapper">
@@ -101,7 +98,6 @@ export default function InicialPage() {
         </section>
       </main>
 
-      {/* MODAL CRIAR PRODUTO */}
       <CreateProductModal
         isOpen={isModalOpen}
         onClose={handleCloseModal}

@@ -2,7 +2,7 @@ import "./ProductCard.css";
 
 export default function ProductCard({
   title = "Título",
-  background = "#151D26",
+  background = "var(--color-card-bg)",
   width = 200,
   height = 200,
   borderRadius = 18,

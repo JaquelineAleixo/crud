@@ -11,7 +11,6 @@ export default function CreateProductModal({
     const [form, setForm] = useState({ id: "", name: "", code: "" });
     const [formError, setFormError] = useState("");
 
-    // sempre que abrir o modal, limpa o formulário/erro
     useEffect(() => {
         if (isOpen) {
             setForm({ name: "", code: "" });

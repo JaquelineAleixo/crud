@@ -1,5 +1,3 @@
-/* Estilos globais da aplicação */
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +6,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #FF6200;
+  --color-bg-900: #171717;
+  --color-bg-700: #0D0D0D;
+  --color-bg-deep: #020617;
+  --color-card-bg: #151D26;
+  --color-text: #333333;
+  --color-muted: #969696; 
+  --color-gray-300: #d3d3d3; 
+  --color-gray-700: #646865; 
+  --color-error: #e53935;
+  --color-success: #00995d;
+  --overlay-dark: rgba(29,29,29,0.6);
 }
 
 *,
@@ -25,14 +40,20 @@ html {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   html {
-    font-size: 15px;
+    font-size: 15.5px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   html {
-    font-size: 14px;
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 13px;
   }
 }

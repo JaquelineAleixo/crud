@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# ✨ Portal CRUD – Painel de Gestão de Produtos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um painel completo desenvolvido em **React**, criado com foco em organização, experiência do usuário e escalabilidade.  
+O projeto implementa um CRUD simples e funcional, com modal de criação, autenticação básica simulada e um design consistente utilizando variáveis globais de CSS.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Visão Geral
 
-### `npm start`
+O **Portal CRUD** foi desenvolvido com o objetivo de oferecer uma estrutura sólida e bem organizada para aplicações de gestão.  
+O projeto conta com:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🧭 **Fluxo de autenticação** (login, cadastro, recuperação e alteração de senha);
+- 📦 **CRUD completo de produtos**, com modal de criação e edição;
+- 🎨 **Sistema de design padronizado**, utilizando variáveis centralizadas em `index.css`;
+- 📱 **Layout totalmente responsivo** (mobile e desktop);
+- 💾 **Persistência simples via `localStorage`**, fácil de substituir por uma API real;
+- 🧩 **Componentização limpa e reutilizável**, mantendo cada responsabilidade isolada.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Tecnologias utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js**
+- **Formik** para validação de formulários
+- **LocalStorage API** para persistência
+- **CSS modular** com variáveis globais
+- **React Router** para navegação entre telas
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎯 Objetivos do Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O foco principal foi criar uma base que pudesse ser:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✔ **Escalável**  
+✔ **Leve**  
+✔ **Visualmente consistente**  
+✔ **De fácil manutenção**
 
-### `npm run eject`
+Para isso, todo o sistema de estilização foi padronizado com variáveis no arquivo `src/index.css`, permitindo alterar cores, bordas, espaçamentos e tipografia em um único lugar.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+O layout segue um estilo moderno, com destaque para contrastes, espaçamentos adequados e componentes reutilizáveis — refletindo práticas reais de projetos profissionais.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🖼️ Interface (conceito)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Uma interface moderna, com:
 
-## Learn More
+- Sidebar escura com ícones  
+- Cards com bordas suaves e fundo azul profundo  
+- Modal elegante com tons escuros  
+- Botões com cor de destaque e feedback visual  
+- Campos com indicação clara de foco e validação  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+O objetivo foi criar uma experiência fluida, minimalista e agradável.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧪 Como funciona internamente
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🔐 Autenticação
+O fluxo de autenticação é totalmente controlado no front-end, usando:
+- validação com **Formik**;
+- persistência dos usuários em `localStorage`;
+- fluxo de **recuperação de senha**, **cadastro** e **login**.
 
-### Analyzing the Bundle Size
+### 📦 CRUD de produtos
+Os produtos são armazenados em `localStorage` e exibidos dinamicamente no dashboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+O **modal de criação** possui:
+- campos validados;
+- botão de fechar funcional;
+- estilização responsiva;
+- feedback visual em erros.
 
-### Making a Progressive Web App
+### 🎨 Sistema de Design
+Todas as cores, espaçamentos, sombras, tamanhos e radius estão centralizados em:
+src/index.css
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Isso facilita:
+- troca de tema;
+- padronização entre telas;
+- manutenção futura;
+- consistência visual do projeto.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ⚙️ Como executar
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone <REPO_URL>
+cd crud
+npm install
+npm start

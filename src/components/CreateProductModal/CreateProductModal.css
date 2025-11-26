@@ -1,7 +1,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--overlay-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,11 +11,10 @@
 .modal {
   position: relative;
   width: min(520px, 90vw);
-  background: #050608;
+  background: var(--color-bg-700);
   border-radius: 16px;
   padding: 32px 36px 28px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
-  color: #f9fafb;
+  color: var(--color-white);
 }
 
 .modal-title {
@@ -31,17 +30,16 @@
   right: 18px;
   background: transparent;
   border: none;
-  color: #9ca3af;
+  color: var(--color-white);
   font-size: 22px;
   cursor: pointer;
 }
-
-/* Campos */
 
 .modal-form {
   display: flex;
   flex-direction: column;
   gap: 22px;
+  padding: 30px 10px;
 }
 
 .modal-field {
@@ -52,34 +50,26 @@
 
 .modal-label {
   font-size: 13px;
-  color: #d1d5db;
+  color: #ffffff;
 }
 
 .modal-input {
   background: transparent;
   border-radius: 6px;
-  border: 1px solid #4b5563;
+  border: 1px solid var(--color-gray-700);
   padding: 10px 12px;
   font-size: 14px;
-  color: #f9fafb;
+  color: var(--color-white);
 }
 
 .modal-input::placeholder {
-  color: #6b7280;
+  color: var(--color-gray-700);
 }
 
 .modal-input:focus {
   outline: none;
-  border-color: #f97316;
+  border-color: var(--color-primary);
 }
-
-/* Erro */
-.modal-error {
-  font-size: 13px;
-  color: #fca5a5;
-}
-
-/* Botões do rodapé */
 
 .modal-actions {
   margin-top: 10px;
@@ -90,7 +80,7 @@
 
 .btn-secondary,
 .btn-primary {
-  min-width: 120px;
+  width: 50%;
   padding: 10px 18px;
   border-radius: 6px;
   border: none;
@@ -100,20 +90,32 @@
 }
 
 .btn-secondary {
-  background: #4b5563;
-  color: #e5e7eb;
+  background: var(--color-gray-700);
+  color: var(--color-white);
 }
 
 .btn-primary {
-  background: #f97316;
-  color: #111827;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
-.btn-secondary:hover {
-  filter: brightness(1.05);
+.btn-secondary:hover, .btn-primary:hover {
+  filter: brightness(1.25);
 }
 
-.btn-primary:hover {
-  filter: brightness(1.05);
-}
+@media (max-width: 600px) {
 
+  .modal-actions {
+    margin-top: 8px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-secondary,
+  .btn-primary {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+}

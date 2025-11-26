@@ -1,4 +1,4 @@
-import "../index.css";
+import "../Login.css";
 import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import { registerUser } from "../../../authService";
