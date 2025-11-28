@@ -11,7 +11,7 @@ O **Portal CRUD** foi desenvolvido com o objetivo de oferecer uma estrutura sól
 O projeto conta com:
 
 - 🧭 **Fluxo de autenticação** (login, cadastro, recuperação e alteração de senha);
-- 📦 **CRUD completo de produtos**, com modal de criação e edição;
+- 📦 **CRUD completo de produtos**, com modal de criação;
 - 🎨 **Sistema de design padronizado**, utilizando variáveis centralizadas em `index.css`;
 - 📱 **Layout totalmente responsivo** (mobile e desktop);
 - 💾 **Persistência simples via `localStorage`**, fácil de substituir por uma API real;
